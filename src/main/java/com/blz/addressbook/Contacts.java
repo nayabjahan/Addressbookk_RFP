@@ -1,16 +1,14 @@
 package com.blz.addressbook;
-
 public class Contacts {
    private String firstName;
    private String lastName;
    private String address;
    private String city;
    private String state;
-   private int zip;
-    private int phoneNumber;
-    private int email;
-
-    public Contacts(String firstName, String lastName, String address, String city, String state, int zip, int phoneNumber, int email) {
+   private String zip;
+    private String phoneNumber;
+    private String email;
+    public Contacts(String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -19,6 +17,10 @@ public class Contacts {
         this.zip = zip;
         this.phoneNumber = phoneNumber;
         this.email = email;
+    }
+
+    public Contacts() {
+
     }
 
     @Override
@@ -75,27 +77,27 @@ public class Contacts {
         this.state = state;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
         this.zip = zip;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(int email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 }
